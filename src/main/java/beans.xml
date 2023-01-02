@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="address" class="com.accenture.assignment_1_20221229.Address">  
+        <constructor-arg name="addr" value="Kallang"></constructor-arg>
+    </bean>
+    <bean id="employee" class="com.accenture.assignment_1_20221229.Employee">
+		<property name="id" value="42"></property>
+		<property name="name" value="Arif"></property>
+		<property name="address" ref="address"></property>
+	</bean>
+
+</beans>
